@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <h1>This will not be replaced by root.render</h1> -->
+    <div id="root">
+        <h1>Not rendered</h1>
+        <!-- This will be replaces by root.render() because we have passed root over there  -->
+    </div>
+    <!-- <h1>This will not be replaced by root.render</h1> -->
+    
+    <script type="module" src="./App.js"> //Order of the file matters
+        //If you write script above CDN links then it will throw an error
+    </script>
+    
+</body>
+
+</html>
