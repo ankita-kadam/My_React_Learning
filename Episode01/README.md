@@ -28,6 +28,12 @@ git push -u origin main
 
 - Async and defer are boolean attributes which are used along with script tag 
 - used to load external script efficiently into our web page.
+- When you load a web page there are 2 major things are happening in browser
+1.  HTML Parsing  
+2.  Loading of script
+    I] Fetching script from network    
+   II] Executing script line by line 
+   -
 - We will be covering  3 scenarios :
   1] By normally using script tag
     - <script src >
@@ -58,11 +64,7 @@ git push -u origin main
          @-------------------------@
                @------@            @------@
 
-- When you load a web page there are 2 major things are happening in browser
-1.  HTML Parsing  
-2.  Loading of script
-    I] Fetching script from network    
-   II] Executing script line by line 
+
         
 
 - See Akshay's video for more understanding
