@@ -1,0 +1,49 @@
+.header {
+    display: flex;  
+    justify-content: space-between; 
+    /*justify-content will move logo to left and nav-items to the right */
+    border: 1px solid grey;
+}
+
+.logo {
+    width: 100px;
+}
+
+.nav-items > ul {
+    display: flex;
+    list-style-type: none; /*This will remove dots which is in front of the nav-item*/
+
+}
+
+.nav-items > ul > li{
+    padding: 10px;
+    margin: 10px;
+}
+
+.res-card{
+    padding: 5px;
+    width: 200px;
+    margin: 5px;
+   
+}
+
+.res-card:hover{
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.search{
+    padding: 10px;
+}
+
+.res-logo{
+    width: 200px;
+    height: 200px;
+}
+
+.res-container{
+    /*To get res-card horizontally instead of vertically*/
+    display: flex;
+    flex-wrap: wrap; /*This will wrap cards*/
+   
+}
