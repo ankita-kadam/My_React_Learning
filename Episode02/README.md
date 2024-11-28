@@ -43,11 +43,14 @@ In package.json we have symbol infront of parcel
 
 # package-lock.json
 - It keeps the track of all the versions
-- A lot of developers says, it is working on my machine(i.e on local), I don't know how it breaks on production. So how does it happens?
+- A lot of developers says, it is working on my machine(i.e on local), I don't know how it breaks on production. So how does it happens? What kind of sorcery is this?
+ Basically to avoid that package-lock.json keeps a Hash (you can see that in parcel in integrity) to verify whatever is there on my dev machine is the same version which is being deployed on to the production
+
 
 # package-lock.json vs package.json
 1. package.json
- - have the exact version of parcel
+ - keeps approx version of packages
+ - can have the caret or tilde
  - It is a configuration for NPM.
  - Whatever packages our project needs, we install those packages using 
  > npm install <packageName>.
@@ -55,11 +58,10 @@ In package.json we have symbol infront of parcel
    configuration related information is stored as dependencies 
    inside package.json file
 2. package-lock.json
- - can have the caret or tilde 
- - locks the exact version of packages being used in the project
+ - have/locks the exact version of packages being used in the project
 
 #  Difference between package.json and package.lock.json
- - In package. json we have information about generic version of installed packages whereas in package.lock.json we have information about the specific or exact version of installed packages.
+ - In package. json we have information about generic version of installed packages whereas in package.lock.json we have information about the specific or exact version of installed packages. 
 
 # node_modules
 - contains all the code that we fetched from npm
@@ -116,7 +118,7 @@ Thus we have written node_modules in .gitignore
 
 # Note :
 - It not a prefered way to bring react, react-dom into your project
-- Because we don't have to make another network call to get react. We already have it node_module.
+- Because we don't have to make another network call to get react. We already have it in node_module.
 - Install react as a normal dependency
 > npm install react
 
@@ -188,3 +190,6 @@ and again give below command to build app
 - Tree shaking is a process of removing the unwanted code that we do not use while developing the application. 
 - In computing, tree shaking is a dead code elimination technique that is applied when optimizing code.
 
+# Note
+- See parceljs.org website
+- See Browserlist onn google
