@@ -102,7 +102,7 @@ const RestaurantCard = (props) =>{ //This is destructring
 const RestaurantCard = (props) =>{ //This is destructring
    const {resData}=props;
 
-   const{name,
+   const{name, 
     cuisines,
     avgRating,
     costForTwo,
