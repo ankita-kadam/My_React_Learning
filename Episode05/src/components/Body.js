@@ -103,7 +103,6 @@ const Body = () => {
                     (res)=>res.info.avgRating > 4
                 )
                 setListOfRestaurant(filteredList);
-
             }}
             >
                 Show Top Rated Restaurant

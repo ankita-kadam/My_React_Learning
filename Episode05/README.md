@@ -46,7 +46,7 @@
 
 
 # React Hooks
-- normal JS utility function
+- normal JS utility function which React gives to us. It has it's own specific usecase.
 - There are 2 very imp react hooks
  I] useState()
     - used to create super powerful state variable in react.
